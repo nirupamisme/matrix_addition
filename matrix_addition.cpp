@@ -1,7 +1,18 @@
+// Author: Nirupam Pal
+// Date: 07/08/2023
+// Description: This program is used for matrix addition
+
 #include<iostream>
 using namespace std;
 
 int main() {
+
+    cout << "*-----------------------------------------*-----------------------------------------*" << endl;
+    cout << "|                                 Author: Nirupam Pal                               |" << endl;
+    cout << "|                                   Date: 02/08/2023                                |" << endl;
+    cout << "|               Description: This program is used for matrix additions              |" << endl;
+    cout << "*-----------------------------------------*---------------------------------------- *" << endl;
+
     // Defining the variables
     int row_a, row_b, col_a, col_b; 
 
@@ -16,6 +27,7 @@ int main() {
     cin >> col_b;
 
     if (row_a == row_b && col_a == col_b) {
+        cout <<"The matrix addition is possible." << endl;
         float a[row_a][col_a], b[row_b][col_b], ans[row_a][col_b];
 
         // Taking the input for the first matrix
@@ -45,6 +57,9 @@ int main() {
             }
             cout << endl;
         }
-    return 0;
     }
+    else {
+        cout << "The matrix addition is not possible!" << endl;
+    }
+    return 0;
 }
